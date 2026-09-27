@@ -1,104 +1,85 @@
 /**
- * Q-Companion Color System
- * High-contrast palette optimized for outdoor viewing under harsh sunlight.
- * Privacy-focused health monitoring during disasters.
+ * Q-Companion Design System
+ * Refined dark theme with subtle warmth. Phone-optimized.
  */
 
 export const Colors = {
-  // Core brand
-  primary: '#00D1B2',       // Teal-cyan — trust, health, calm
-  primaryDark: '#00A896',
-  primaryLight: '#33E8CE',
-  accent: '#FF6B6B',        // Coral red — alerts, urgency
-  accentOrange: '#FF9F43',  // Warm orange — warnings
-  accentBlue: '#54A0FF',    // Sky blue — info, connectivity
-
   // Backgrounds
-  bgDark: '#0A0E17',        // Deep navy-black
-  bgCard: '#131B2E',        // Card surface
-  bgCardLight: '#1A2340',   // Elevated card
-  bgElevated: '#1E293B',    // Modal / overlay
-  bgSurface: '#0F1629',     // Section background
+  bg: '#0C0F18',
+  bgCard: '#151926',
+  bgInput: '#1A1F30',
+  bgInputFocus: '#1E2438',
+  bgElevated: '#1C2135',
+  bgSheet: '#12151F',
+
+  // Brand
+  primary: '#6C9FFF',
+  primaryMuted: 'rgba(108, 159, 255, 0.12)',
+  accent: '#FF7A8A',
+  accentMuted: 'rgba(255, 122, 138, 0.12)',
+  teal: '#4ECDC4',
+  tealMuted: 'rgba(78, 205, 196, 0.12)',
+  amber: '#FFB347',
+  amberMuted: 'rgba(255, 179, 71, 0.12)',
+  purple: '#A78BFA',
+  purpleMuted: 'rgba(167, 139, 250, 0.12)',
 
   // Text
-  textPrimary: '#F1F5F9',
-  textSecondary: '#94A3B8',
-  textMuted: '#64748B',
-  textInverse: '#0A0E17',
+  text: '#F0F2F8',
+  textSoft: '#A0A8C0',
+  textMuted: '#5C6480',
+  textInverse: '#0C0F18',
 
-  // Status / Risk
-  riskLow: '#22C55E',       // Green
-  riskModerate: '#F59E0B',  // Amber
-  riskHigh: '#EF4444',      // Red
-  riskCritical: '#DC2626',  // Deep red
+  // Risk
+  good: '#4ADE80',
+  goodMuted: 'rgba(74, 222, 128, 0.12)',
+  warn: '#FBBF24',
+  warnMuted: 'rgba(251, 191, 36, 0.12)',
+  danger: '#F87171',
+  dangerMuted: 'rgba(248, 113, 113, 0.12)',
+  critical: '#EF4444',
+  criticalMuted: 'rgba(239, 68, 68, 0.15)',
 
-  // Vitals
-  heartRate: '#FF6B6B',
-  spo2: '#54A0FF',
-  temperature: '#FF9F43',
-  respiration: '#A78BFA',   // Purple
-  aqi: '#34D399',           // Emerald
-  humidity: '#38BDF8',      // Light blue
-
-  // UI
-  border: '#1E293B',
-  borderLight: '#334155',
-  divider: '#1E293B',
-  overlay: 'rgba(0, 0, 0, 0.6)',
-  shadow: 'rgba(0, 0, 0, 0.3)',
-
-  // Connection status
-  connected: '#22C55E',
-  disconnected: '#EF4444',
-  fallback: '#F59E0B',
-
-  // SOS
-  sosRed: '#DC2626',
-  sosPulse: '#FCA5A5',
-  sosBackground: 'rgba(220, 38, 38, 0.15)',
-
-  // Gradients (pairs)
-  gradientPrimary: ['#00D1B2', '#00A896'] as [string, string],
-  gradientDanger: ['#EF4444', '#DC2626'] as [string, string],
-  gradientWarm: ['#FF9F43', '#FF6B6B'] as [string, string],
-  gradientCool: ['#54A0FF', '#A78BFA'] as [string, string],
-  gradientCard: ['#131B2E', '#1A2340'] as [string, string],
+  // Utility
+  border: '#1F2536',
+  borderFocus: '#6C9FFF',
+  divider: '#1A1F2E',
+  overlay: 'rgba(0,0,0,0.7)',
+  white08: 'rgba(255,255,255,0.08)',
+  white04: 'rgba(255,255,255,0.04)',
 };
 
-export const Spacing = {
+export const S = {
   xs: 4,
   sm: 8,
-  md: 12,
-  lg: 16,
-  xl: 20,
-  xxl: 24,
-  xxxl: 32,
-};
-
-export const BorderRadius = {
-  sm: 8,
-  md: 12,
-  lg: 16,
-  xl: 20,
-  xxl: 24,
-  full: 9999,
-};
-
-export const FontSizes = {
-  xs: 10,
-  sm: 12,
   md: 14,
-  lg: 16,
-  xl: 18,
-  xxl: 22,
-  xxxl: 28,
-  hero: 36,
+  lg: 20,
+  xl: 28,
+  xxl: 40,
 };
 
-export const FontWeights = {
+export const R = {
+  sm: 10,
+  md: 14,
+  lg: 18,
+  xl: 24,
+  full: 999,
+};
+
+export const F = {
+  xs: 11,
+  sm: 13,
+  md: 15,
+  lg: 17,
+  xl: 21,
+  xxl: 28,
+  hero: 42,
+};
+
+export const W = {
   regular: '400' as const,
   medium: '500' as const,
-  semibold: '600' as const,
+  semi: '600' as const,
   bold: '700' as const,
-  extrabold: '800' as const,
+  heavy: '800' as const,
 };
